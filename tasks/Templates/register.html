@@ -1,0 +1,27 @@
+{% extends 'core/base_portfolio.html' %}
+{% load static %}
+
+
+
+{% block content%}
+<div class="center_content">
+    <div class="center_content__content z-3">
+        <span class="text-dark fs-4">{{error}}</span> 
+        <h1 class="text-center text-light ls-2 fs-1">Register</h1>
+        <form class="content__form" action="/register/" method="post">
+            {% csrf_token %}
+            <input class="form-control" type="text" name="username" id="" placeholder="usuario">
+            <input class="form-control" type="password" name="password1" id="" placeholder="contraseña">
+            <input class="form-control" type="password" name="password2" id="" placeholder="repetir contraseña">
+            <button class="btn btn-light text-light my-3 text-capitalize" type="submit">Enviar</button>
+        </form>
+
+    </div>  
+    
+    <div class="image_test">
+
+        <img src="{% static image_url %}" alt="">
+    </div>
+</div>
+
+{% endblock %}

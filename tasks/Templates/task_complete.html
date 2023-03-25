@@ -1,0 +1,29 @@
+{% extends 'core/base_portfolio.html' %}
+
+
+{% block content %}
+<h1>Tareas completadas</h1>
+
+<ul>
+    {% for task in task%}
+    <a href="{% url 'task_detail' task.id %}">
+
+        <li>
+            {% if task.important %}
+            <h1 class="text-info">
+                {{task.title}}
+            </h1>
+            {% else %}
+                <h1>
+                    {{task.title}}
+                </h1>
+            {% endif  %}
+            <p>{{task.description}}</p>
+            <p>{{task.datecompleted | date:'M j Y' }}</p>
+
+            <p><span>by - </span>{{task.user.username}}</p>
+        </li>
+    </a>
+    {% endfor %}
+</ul>
+{% endblock content %}

@@ -1,0 +1,43 @@
+@import url('./variables.css');
+
+
+.header_content{
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+   
+}
+.header_content .header_content__bg-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+
+}
+
+.header_content__bottom li{
+    color: var(--dark-font-color);
+    z-index: 999;
+
+}
+.header_content__top{
+    width: 206px;
+    height: 185px;
+    /* background-color: lightseagreen; */
+    z-index: 999;
+    filter: drop-shadow(10px 6px 10px rgba(32, 30, 30, 0.7));;
+}
+.header_content__top img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+    

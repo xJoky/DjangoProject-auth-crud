@@ -1,0 +1,38 @@
+{% extends 'core/base_portfolio.html' %} {% load static %} {% block title %}
+<title>{{app_title}} | {{title_view}}</title>
+{% endblock title %} {% block content %}
+
+<div class="home_content">
+  <div class="container-xxl">
+    <div
+      class="home_content__container container-fluid row row-cols-1 row-cols-lg-2"
+    >
+      <div class="home_content__info text-light col">
+        <div class="home_info__top">
+          <p class="fs-2 m-0">Welcome To my Site</p>
+          <p class="fs-3 m-0">Hello, It's me <span class="fs-1">JokyDev</span></p>
+          <p class="fs-3 m-0">and i'm a <span class="fs-1 text_gradient__color " id="multiple-text"></span></p>
+        </div>
+        <div class="home_info__middle">
+          <p class="text-justify">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
+            ullam, nisi, voluptatibus quisquam sed enim deserunt dolorem quis
+            quas nulla pariatur ratione molestias commodi ipsum ea ex error
+            amet! Tempora. Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Consectetur quia tempore ad mollitia. Maxime neque minus
+            molestiae reprehenderit aliquam. Ad repellat doloribus, perspiciatis
+            expedita consectetur exercitationem velit earum veritatis
+            blanditiis!
+          </p>
+        </div>
+        <div class="home_info__bottom">
+            <a class=" info_btn" href="">Let's Talk</a>
+        </div>
+      </div>
+      <div class="home_content__image text-light col">
+        <img src="{% static 'assets/imgs/body_img.png' %}" alt="" srcset="">
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

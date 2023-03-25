@@ -1,0 +1,62 @@
+:root{
+    --dark-font-color:#2F1303;
+    --btn-dark-color: #2F1303;
+    --bg-dark-color:#191A1F;
+    
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rancho', cursive;
+    font-size: 1rem;
+}
+.bg-main-color{
+    background-color: var(--bg-dark-color);
+}
+.main_content__container{
+    width: 100%;
+    height:100vh;
+    /* background-color: lightblue; */
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas: "aside main";
+}
+.base_container{
+    width: 100%;
+    height: 100vh;
+    /* background-color: yellow; */
+   
+    
+}
+.shape_triangle{
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    clip-path: polygon(35% 0, 35% 100%, 100% 50%);
+    z-index: 4;
+    position: absolute;
+    left: 7.2%;
+}
+.custom-shape-divider-bottom-1679782030 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1679782030 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 128px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1679782030 .shape-fill {
+    fill: #F5A623;
+}

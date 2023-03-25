@@ -1,0 +1,49 @@
+{% extends 'core/base2.html' %}
+{% load static %}
+{% block title %}
+<title>{{app_title}} | {{title_view}}</title>
+{% endblock title %}
+
+{% block content %}
+<nav class="header">
+    <div class="brand">
+        Portfolio
+    </div>
+    <div class="tail text-light">
+        <ul class="tail-opt list-unstyled m-0">
+            <li class="fs-32">Home</li>
+            <li class="fs-32">Skills</li>
+            <li class="fs-32">Projects</li>
+          
+        </ul>
+    </div>
+</nav>
+<div class="aside">
+    <div class="aside_content">
+        <div class="aside_content__top">
+            <p class="fs-32 m-0">Hello It's Me</p>
+            <p class="fs-64 m-0">JokyDev</p>
+            <p class="fs-32 m-0">And I'm <span id="multiple-text" class="fs-32 color_"></span></p>
+        </div>
+        <div class="aside_content__middle">
+            <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem soluta, laudantium quod nostrum error voluptatum nemo ipsa ullam iure cumque aliquid sint adipisci molestiae non quia in eos! Quas, sint!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe corrupti iusto beatae dolores exercitationem quos incidunt sunt. Laudantium illum magnam harum corrupti molestiae ipsa optio necessitatibus, sit, unde et at!
+            </p>
+            
+        </div>
+        <div class="aside_content__bottom">
+            <div class="social_media">
+                <span class=""><i class="bi bi-linkedin fs-20"></i></span>
+                <span><i class="bi bi-facebook fs-20"></i></span>
+                <span><i class="bi bi-instagram fs-20"></i></span>
+                <span><i class="bi bi-whatsapp fs-20"></i></span>
+            </div>
+            <button class="btn btn-dark mt-3">Descargar CV</button>
+        </div>
+    </div>
+</div>
+<div class="avatar">
+    <img src="{% static image_url %}" alt="">
+</div>
+
+{% endblock content %}

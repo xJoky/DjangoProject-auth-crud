@@ -1,0 +1,54 @@
+@import url('./variables.css');
+
+
+.btn-dark{
+    background-color: var(--btn-dark-color) !important;
+}
+.btn-light{
+    background-color: #a96b07 !important;
+    border: none !important;
+    stroke: 0 !important;
+}
+.btn-light:hover{
+    background: linear-gradient(180deg, #FBA81F 15.1%, #F87537 73.96%);
+}
+.navbar{
+    padding: 0 !important;
+    height: 100% !important;
+    
+}
+.navbar-brand{
+    font-size: 48px !important;
+    background: linear-gradient(180deg, #FBA81F 15.1%, #F87537 73.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    letter-spacing: 5px !important;
+}
+
+.nav-link{
+    font-size: 1.5rem !important;
+}
+.nav-link:hover{
+    color: #FBA81F !important;
+}
+.nav-link--modify{
+    background: linear-gradient(180deg, #FBA81F 15.1%, #F87537 50%);
+    border-radius: 10px;
+    letter-spacing: 2px;
+    transition: .3s;
+}
+.nav-link--modify:hover{
+    background: linear-gradient(180deg, #d7b47b 15.1%, #d7835b 50%);
+    color: #fff !important;
+}
+
+.nav-item{
+    margin: 0 10px !important;
+}
+
+/* Letter Spacing */
+.ls-2{
+    letter-spacing: 2px;
+}

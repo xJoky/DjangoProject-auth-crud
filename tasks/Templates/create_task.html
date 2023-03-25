@@ -1,0 +1,12 @@
+{% extends 'core/base_portfolio.html' %}
+
+
+{% block content %}
+<h1>Create tasks</h1>
+
+<form action="/tasks/create/" method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button>Crear</button>
+</form>
+{% endblock content %}

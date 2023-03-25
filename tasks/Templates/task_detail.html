@@ -1,0 +1,30 @@
+{% extends 'core/base_portfolio.html' %}
+
+{% block content%}
+<h1>Detalle de la tarea</h1>
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+
+    <button>Update</button>
+
+</form>
+
+<form action="{% url 'complete_task' task.id %}" method="post">
+    {% csrf_token %}
+
+    <button>Complete</button>
+
+</form>
+<form action="{% url 'delete_task' task.id %}" method="post">
+    {% csrf_token %}
+
+    <button>Delete</button>
+
+</form>
+
+
+
+<a href="{% url 'tasks' %}">volver</a>
+{% endblock %}

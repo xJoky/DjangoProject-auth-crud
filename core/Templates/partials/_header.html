@@ -1,0 +1,49 @@
+{% load static %}
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid container-xxl">
+    <a class="navbar-brand" href="/">Portfolio</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active text-light" aria-current="page" href="/">Home</a>
+        </li>
+
+        {% if user.is_authenticated %}
+        <li class="nav-item">
+          <a class="nav-link text-light" href="{% url 'tasks' %}">Task</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="{% url 'create_task' %}">Create Task</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="{% url 'completed_task' %}">Completed Task</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="{% url 'logout' %}">Logout</a>
+        </li>
+
+        {% else %}
+        <li class="nav-item">
+          <a class="nav-link text-light" href="{% url 'login' %}">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link--modify text-light " href="{% url 'register' %}">Register</a>
+        </li>
+        
+        {% endif%}
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,46 @@
+@import url('./variables.css');
+
+
+
+
+
+.center_content{
+    width: 100%;
+    height: 100%;
+    min-height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-dark-color);
+  
+}
+.center_content__content{
+    width: 400px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #ffffff39;
+    padding: 32px 64px;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    box-shadow: 6px 4px 6px 2px #fefcfc5b;
+}
+.content__form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.image_test{
+    width: 100%;
+    height: calc(100vh);
+    position: fixed;
+    top: 0;
+}
+.image_test img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

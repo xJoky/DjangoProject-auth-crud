@@ -1,0 +1,10 @@
+@import url('./variables.css');
+
+.main_body__container{
+    width: 100%;
+    height: 100vh;
+    background-color: yellow;
+}
+.color{
+    color: red;
+}
